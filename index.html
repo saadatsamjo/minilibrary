@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">MiniLibrary</div>
+        <div class="profile-div"><img class="profile-img" src="profile.png" alt=""></div>
+    </div>
+    <div class="overlay"></div>
+    <div class="main-container">
+       
+        <div class="library-header">
+            <h2 id="welcome-text">Hello Guest. Welcome to your Minilibrary!</h2>
+            <button id="new-book-btn">ADD NEW BOOK</button>
+        </div>
+
+         <!-- library div -->
+        <div class="library-div">
+            <h2 class="section-heading">Book library</h2>
+            <div class="library-books">
+                <div class="empty">
+                    <img src="empty.png" alt="">
+                    <h3>Your collection is empty..Add books now!</h3>
+                </div>
+
+            </div>
+            <div class="see-more-div">
+                <button type="button" id="see-more-button">See all</button>
+                <button type="button" id="view-latest-button">View latest</button>
+            </div>
+        </div>
+
+        
+        <!-- suggestion div -->
+        <div class="suggestions-div">
+            <h2 class="section-heading">Book suggestions</h2>
+            <div class="suggestion-books">
+                <div class="book-card">
+                    <div class="book-title-div">
+                        <i class="icon fa fa-bars suggestion-icon"></i>
+                        <h1 id="book-title">Book  suggested read</h1>
+                    </div>
+                    
+                    <div class="book-author-div">
+                        <p id="book-author">Mr. Author</p>
+                    </div>
+                    <div class="book-footer-div">
+                        <p id="book-pages">100 pages</p>
+                        <p id="book-read">2008</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-title-div">
+                        <i class="icon fa fa-bars suggestion-icon"></i>
+                        <h1 id="book-title">Suggested Book two long title</h1>
+                    </div>
+                    
+                    <div class="book-author-div">
+                        <p id="book-author">Mr. Author</p>
+                    </div>
+                    <div class="book-footer-div">
+                        <p id="book-pages">100 pages</p>
+                        <p id="book-read">1993</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-title-div">
+                        <i class="icon fa fa-bars suggestion-icon"></i>
+                        <h1 id="book-title">Suggested Book three</h1>
+                    </div>
+                    
+                    <div class="book-author-div">
+                        <p id="book-author">Mr. Author</p>
+                    </div>
+                    <div class="book-footer-div">
+                        <p id="book-pages">100 pages</p>
+                        <p id="book-read">2000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+
+    
+
+
+
+
+    <div id="form-container">
+        <!-- Form for adding a new book -->
+        <form id="new-book-form">
+            <h1 id="form-heading">Add New Book</h1>
+            <label for="title">Book Title:</label>
+            <input class="input-field" type="text" id="title" required placeholder="Book Title">
+            <label for="author">Book Author:</label>
+            <input class="input-field" type="text" id="author" required placeholder="Authors name">
+            <label for="pages">Number of Pages:</label>
+            <input class="input-field" type="number" id="pages" required placeholder="Number of pages">
+            <div class="read-div">
+                <label for="read">Have you Read this book?</label>
+                <input type="checkbox" id="read">
+            </div>
+            <button id="add-book-btn" type="submit">Add Book</button>
+        </form>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

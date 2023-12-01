@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(202, 192, 192); */
+}
+/* colors */
+:root{
+    --primary-color : #62362C;
+    --secondary-color:#b46d556f;
+    --tertiary-color: #A48272;
+}
+
+/* header region */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 50px;
+}
+
+.section-heading{
+    margin-left: 130px;
+}
+
+/* the main container of the of page contets below the header */
+.main-container{
+    width: 1100px;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+
+.library-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#library-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.suggestions-div, .library-div{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    /* background-color: var(--tertiary-color); */
+    border-radius: 10px;
+    min-height: 470px;
+    overflow: hidden;
+    border: var(--primary-color) solid 1px;
+}
+
+.suggestion-books, .library-books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: var(--tertiary-color); */
+}
+
+.book-card {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 250px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+/* book card contents */
+.book-card .book-title-div {
+    /* position: relative; */
+    background-color: grey;
+}
+
+.book-card  .icon{
+    /* position: absolute; */
+    margin-left: 227px;
+    margin-top: 10px;
+}
+
+.book-card .book-title-div h1 {
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.book-card .book-author-div {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: end;
+    padding: 6px 20px;
+}
+
+.book-card .book-author-div p {
+    color: white;
+}
+
+.book-card .book-footer-div {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px;
+}
+
+.book-card .book-footer-div #pages {
+    color: white;
+}
+
+.book-card .book-footer-div #read {
+    color:white;
+}
+
+
+
+#form-container {
+
+    width: 500px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#new-book-form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 550px;
+    display: none;
+}
+
+
+#form-heading{
+    text-align: center;
+}
+
+.input-field{
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#new-book-btn{
+    padding: 0px 30px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+}
+
+
+.read-div{
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.see-more-div{
+    display: none;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.see-more-div, #see-more-button{
+    display: none;
+}
+.see-more-div, #view-latest-button{
+    display: none;
+}
+
+/*CSS classes for background color of the YES book is read or No NOT YET read */
+.yes {
+    border: 1px solid white;
+    background-color: green;
+    color: white;
+    padding: 5px 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.no {
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+    padding: 5px 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.book-pages{
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+}
+
+
+
+
+/* overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* semi-transparent black overlay */
+  }
+
+  /* empty books icon */
+  .empty{
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .logo{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    margin: 10px ;
+  }
+
+  .profile-div .profile-img{
+    height: 45px;
+    margin: 10px ;
+  }
